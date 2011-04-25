@@ -3,9 +3,9 @@
 
 namespace TryGame
 {
-	using namespace My2DPhys;
+	using namespace sfb2d;
 
-	class GameController : public My2DPhys::AppController
+	class GameController : public sfb2d::AppController
 	{
 	private:
 
@@ -29,7 +29,7 @@ namespace TryGame
 		b2AABB _aabb;
 
 		TryGame::DemoLevel *_ptrDemoLevel;
-		My2DPhys::Actor **_ptrGameElements;
+		sfb2d::Actor **_ptrGameElements;
 
 		// My Events
 		virtual void OnLoad();

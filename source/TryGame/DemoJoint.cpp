@@ -83,7 +83,7 @@ namespace TryGame
 		return _ptrPrevLevel;
 	}
 	
-	void DemoJoint::Init(b2World &refPhysWorld, My2DPhys::Actor **gameElements)
+	void DemoJoint::Init(b2World &refPhysWorld, sfb2d::Actor **gameElements)
 	{
 		_ptrPlayer = new BasicShape;
 		_ptrPlayer->CreateCircle(refPhysWorld,
@@ -105,12 +105,12 @@ namespace TryGame
 		return PLAYABLE_COUNT + DYNAMIC_OBJECT_COUNT + HANGER_COUNT;// + RAGDOLL_COMPONENT_COUNT;
 	}
 	
-	My2DPhys::Actor *DemoJoint::GetPlayable() const
+	sfb2d::Actor *DemoJoint::GetPlayable() const
 	{
 		return _ptrPlayer;
 	}
 
-	void DemoJoint::CreateRope(b2World &refPhysWorld, My2DPhys::Actor **gameElements)
+	void DemoJoint::CreateRope(b2World &refPhysWorld, sfb2d::Actor **gameElements)
 	{
 		{
 			b2Vec2 ropesVertices[4];
@@ -212,7 +212,7 @@ namespace TryGame
 			0.1f);
 	}
 
-	/*void DemoJoint::CreateRagDoll(b2World &refPhysWorld, My2DPhys::Actor **gameElements)
+	/*void DemoJoint::CreateRagDoll(b2World &refPhysWorld, sfb2d::Actor **gameElements)
 	{
 		_ptrRagDollComponents = new BasicShape *[RAGDOLL_COMPONENT_COUNT];
 		_ptrRagDollJoint = new RevoluteJoint *[RAGDOLL_JOINT];

@@ -4,7 +4,7 @@
 #include "AppController.h"
 
 
-namespace My2DPhys
+namespace sfb2d
 {
 	AppController::AppController(void)
 	{

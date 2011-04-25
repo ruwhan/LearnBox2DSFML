@@ -1,9 +1,9 @@
 #ifndef __GEAR_JOINT_H
 #define __GEAR_JOINT_H
 
-namespace My2DPhys
+namespace sfb2d
 {
-	class GearJoint : public My2DPhys::JointBase
+	class GearJoint : public JointBase
 	{
 	private:
 		b2GearJointDef _gearJointDefinition;

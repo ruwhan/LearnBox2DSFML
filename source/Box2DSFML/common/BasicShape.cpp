@@ -1,6 +1,6 @@
 #include "GeneralInclude.h"
 
-namespace My2DPhys
+namespace sfb2d
 {
 	BasicShape::BasicShape(void)
 	{

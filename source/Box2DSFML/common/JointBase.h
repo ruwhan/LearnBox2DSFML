@@ -1,6 +1,7 @@
 #ifndef __JOINT_BASE_H
 #define __JOINT_BASE_H
-namespace My2DPhys
+
+namespace sfb2d
 {
 	class JointBase
 	{
@@ -20,4 +21,5 @@ namespace My2DPhys
 		const b2Joint* GetJoint() const;
 	};
 }
+
 #endif // __JOINT_BASE_H

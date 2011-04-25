@@ -1,7 +1,7 @@
 #ifndef __DISTANCE_JOINT_H
 #define __DISTANCE_JOINT_H
 
-namespace My2DPhys
+namespace sfb2d
 {
 	class DistanceJoint : public JointBase
 	{

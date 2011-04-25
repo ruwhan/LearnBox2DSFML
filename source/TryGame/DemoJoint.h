@@ -20,21 +20,21 @@ namespace TryGame
 			RAGDOLL_JOINT = 9
 		};
 
-		My2DPhys::BasicShape *_ptrPlayer;
-		My2DPhys::BasicShape **_ptrRopes;
-		My2DPhys::BasicShape **_ptrHanger;
-		//My2DPhys::BasicShape **_ptrRagDollComponents;
+		sfb2d::BasicShape *_ptrPlayer;
+		sfb2d::BasicShape **_ptrRopes;
+		sfb2d::BasicShape **_ptrHanger;
+		//sfb2d::BasicShape **_ptrRagDollComponents;
 
-		My2DPhys::DistanceJoint **_ptrRopeJoints;
-		//My2DPhys::RevoluteJoint **_ptrRagDollJoint;
+		sfb2d::DistanceJoint **_ptrRopeJoints;
+		//sfb2d::RevoluteJoint **_ptrRagDollJoint;
 
 		static int _elementCounter;
 
 		DemoLevel *_ptrNextLevel;
 		DemoLevel *_ptrPrevLevel;
 
-		void CreateRope(b2World &refPhysWorld, My2DPhys::Actor **gameElements);
-		//void CreateRagDoll(b2World &refPhysWorld, My2DPhys::Actor **gameElements);
+		void CreateRope(b2World &refPhysWorld, sfb2d::Actor **gameElements);
+		//void CreateRagDoll(b2World &refPhysWorld, sfb2d::Actor **gameElements);
 
 	public:
 		DemoJoint(void);
@@ -43,9 +43,9 @@ namespace TryGame
 		static DemoLevel* Create();
 		virtual DemoLevel* NextLevel();
 		virtual DemoLevel* PrevLevel();
-		virtual void Init(b2World &refPhysWorld, My2DPhys::Actor **gameElements);
+		virtual void Init(b2World &refPhysWorld, sfb2d::Actor **gameElements);
 		virtual int GetElementCount() const;
-		virtual My2DPhys::Actor *GetPlayable() const;
+		virtual sfb2d::Actor *GetPlayable() const;
 	};
 }
 

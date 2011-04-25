@@ -1,7 +1,7 @@
 #ifndef __DEBUG_DRAW_H
 #define __DEBUG_DRAW_H
 
-namespace My2DPhys
+namespace sfb2d
 {
 	class DebugDraw :
 		public b2DebugDraw

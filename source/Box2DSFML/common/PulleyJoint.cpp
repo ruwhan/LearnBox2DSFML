@@ -3,7 +3,7 @@
 #include "PulleyJoint.h"
 
 
-namespace My2DPhys
+namespace sfb2d
 {
 	PulleyJoint::PulleyJoint(void)
 	{

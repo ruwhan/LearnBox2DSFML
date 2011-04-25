@@ -16,15 +16,15 @@ namespace TryGame
 		const std::string assetsDir;
 		static int _elementCounter;
 
-		My2DPhys::Sprite **_ptrBoundaries;
-		My2DPhys::Sprite **_ptrBodies;
-		My2DPhys::Sprite *_ptrPlayable;
+		sfb2d::Sprite **_ptrBoundaries;
+		sfb2d::Sprite **_ptrBodies;
+		sfb2d::Sprite *_ptrPlayable;
 
 		DemoLevel *_ptrNextLevel;
 		DemoLevel *_ptrPrevLevel;
 
-		void CreateStaticBodies(b2World &refPhysWorld, My2DPhys::Actor **gameElements);
-		void CreateBodies(b2World &refPhysWorld, My2DPhys::Actor **gameElements);
+		void CreateStaticBodies(b2World &refPhysWorld, sfb2d::Actor **gameElements);
+		void CreateBodies(b2World &refPhysWorld, sfb2d::Actor **gameElements);
 
 	public:
 		DemoTexture(void);
@@ -33,9 +33,9 @@ namespace TryGame
 		static DemoLevel* Create();
 		virtual DemoLevel* NextLevel();
 		virtual DemoLevel* PrevLevel();
-		virtual void Init(b2World &refPhysWorld, My2DPhys::Actor **gameElements);
+		virtual void Init(b2World &refPhysWorld,sfb2d::Actor **gameElements);
 		virtual int GetElementCount() const;
-		virtual My2DPhys::Actor *GetPlayable() const;
+		virtual sfb2d::Actor *GetPlayable() const;
 	};
 }
 

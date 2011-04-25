@@ -3,7 +3,7 @@
 #include "RevoluteJoint.h"
 
 
-namespace My2DPhys
+namespace sfb2d
 {
 	RevoluteJoint::RevoluteJoint(void)
 	{

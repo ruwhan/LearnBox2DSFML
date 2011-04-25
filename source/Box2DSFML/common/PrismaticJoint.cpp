@@ -3,7 +3,7 @@
 #include "PrismaticJoint.h"
 
 
-namespace My2DPhys
+namespace sfb2d
 {
 	PrismaticJoint::PrismaticJoint(void)
 	{

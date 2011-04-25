@@ -2,7 +2,7 @@
 
 #include "DistanceJoint.h"
 
-namespace My2DPhys
+namespace sfb2d
 {
 	DistanceJoint::DistanceJoint(void)
 	{

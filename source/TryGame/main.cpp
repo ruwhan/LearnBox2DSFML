@@ -1,11 +1,11 @@
 
 #include "GameIncludes.h"
 
-using namespace My2DPhys;
+using namespace sfb2d;
 
 int main()
 {
-	My2DPhys::AppController *ptrController = new TryGame::GameController;
+	sfb2d::AppController *ptrController = new TryGame::GameController;
 
 	ptrController->Execute();
 

@@ -1,7 +1,7 @@
 #ifndef __APP_CONTROLLER
 #define __APP_CONTROLLER
 
-namespace My2DPhys
+namespace sfb2d
 {
 	class AppController
 	{

@@ -14,9 +14,9 @@ namespace TryGame
 		static DemoLevel *Create();
 		virtual DemoLevel *NextLevel() = 0;
 		virtual DemoLevel *PrevLevel() = 0;
-		virtual void Init(b2World &refPhysWorld, My2DPhys::Actor **gameElements) = 0;
+		virtual void Init(b2World &refPhysWorld, sfb2d::Actor **gameElements) = 0;
 		virtual int GetElementCount() const = 0;
-		virtual My2DPhys::Actor *GetPlayable() const = 0;
+		virtual sfb2d::Actor *GetPlayable() const = 0;
 		//virtual void ArrangeLevelChain() = 0;
 	};
 }

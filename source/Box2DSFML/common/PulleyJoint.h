@@ -1,7 +1,7 @@
 #ifndef __PULLEY_JOINT_H
 #define __PULLEY_JOINT_H
 
-namespace My2DPhys
+namespace sfb2d
 {
 	class PulleyJoint : public JointBase
 	{

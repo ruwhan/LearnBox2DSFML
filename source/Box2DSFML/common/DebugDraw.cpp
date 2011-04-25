@@ -2,7 +2,7 @@
 
 #include "DebugDraw.h"
 
-namespace My2DPhys
+namespace sfb2d
 {
 	DebugDraw::DebugDraw(sf::RenderWindow *ptrWindow)
 	{

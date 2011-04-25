@@ -6,7 +6,7 @@
 
 namespace TryGame
 {
-using namespace My2DPhys;
+using namespace sfb2d;
 
 	GameController::GameController(void) : 
 		TIME_STEP(1.0f / 90.0f)

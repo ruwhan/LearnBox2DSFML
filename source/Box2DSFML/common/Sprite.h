@@ -1,7 +1,7 @@
 #ifndef __SPRITE_H
 #define __SPRITE_H
 
-namespace My2DPhys
+namespace sfb2d
 {
 	class Sprite : public Actor
 	{

@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-namespace My2DPhys
+namespace sfb2d
 {
 	Actor::Actor(void)
 	{

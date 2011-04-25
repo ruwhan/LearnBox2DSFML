@@ -1,7 +1,7 @@
 #ifndef __ACTOR_H
 #define __ACTOR_H
 
-namespace My2DPhys
+namespace sfb2d
 {
 	class Actor
 	{

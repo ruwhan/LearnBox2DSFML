@@ -13,7 +13,7 @@ namespace TryGame
 
 		static int _elementCounter;
 
-		My2DPhys::BasicShape **_ptrGround;
+		sfb2d::BasicShape **_ptrGround;
 
 	public:
 		DemoPolygon(void);
@@ -22,9 +22,9 @@ namespace TryGame
 		static DemoLevel* Create();
 		virtual DemoLevel* NextLevel();
 		virtual DemoLevel* PrevLevel();
-		virtual void Init(b2World &refPhysWorld, My2DPhys::Actor **gameElements);
+		virtual void Init(b2World &refPhysWorld, sfb2d::Actor **gameElements);
 		virtual int GetElementCount() const;
-		virtual My2DPhys::Actor *GetPlayable() const;
+		virtual sfb2d::Actor *GetPlayable() const;
 	};
 }
 

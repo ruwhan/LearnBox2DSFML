@@ -1,7 +1,7 @@
 #ifndef __BASIC_SHAPE
 #define __BASIC_SHAPE
 
-namespace My2DPhys
+namespace sfb2d
 {
 	class BasicShape : public Actor
 	{

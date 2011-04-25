@@ -2,7 +2,7 @@
 
 #include "JointBase.h"
 
-namespace My2DPhys
+namespace sfb2d
 {
 	JointBase::JointBase(void)
 	{

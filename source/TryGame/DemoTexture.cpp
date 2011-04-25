@@ -46,7 +46,7 @@ namespace TryGame
 		//delete _ptrNextLevel;
 	}
 
-	void DemoTexture::Init(b2World &refPhysWorld, My2DPhys::Actor **gameElements)
+	void DemoTexture::Init(b2World &refPhysWorld, sfb2d::Actor **gameElements)
 	{
 		CreateStaticBodies(refPhysWorld, gameElements);
 		CreateBodies(refPhysWorld, gameElements);
@@ -70,7 +70,7 @@ namespace TryGame
 		return NULL;
 	}
 
-	void DemoTexture::CreateStaticBodies(b2World &refPhysWorld, My2DPhys::Actor **gameElements)
+	void DemoTexture::CreateStaticBodies(b2World &refPhysWorld, sfb2d::Actor **gameElements)
 	{
 		_ptrBoundaries = new Sprite *[STATIC_OBJECT_COUNT];
 		for(int i = 0; i < DYNAMIC_OBJECT_COUNT; i++)
@@ -131,7 +131,7 @@ namespace TryGame
 		gameElements[_elementCounter++] = _ptrBoundaries[3];
 	}
 
-	void DemoTexture::CreateBodies(b2World &refPhysWorld, My2DPhys::Actor **gameElements)
+	void DemoTexture::CreateBodies(b2World &refPhysWorld, sfb2d::Actor **gameElements)
 	{		
 		_ptrBodies = new Sprite *[DYNAMIC_OBJECT_COUNT];
 		for(int i = 0; i < DYNAMIC_OBJECT_COUNT; i++)
@@ -201,7 +201,7 @@ namespace TryGame
 		return STATIC_OBJECT_COUNT + DYNAMIC_OBJECT_COUNT + PLAYABLE_COUNT;
 	}
 	
-	My2DPhys::Actor *DemoTexture::GetPlayable() const
+	sfb2d::Actor *DemoTexture::GetPlayable() const
 	{
 		return _ptrPlayable;
 	}

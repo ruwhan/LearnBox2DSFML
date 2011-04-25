@@ -1,7 +1,7 @@
 #ifndef __REVOLUTE_JOINT_H
 #define __REVOLUTE_JOINT_H
 
-namespace My2DPhys
+namespace sfb2d
 {
 	class RevoluteJoint : public JointBase
 	{

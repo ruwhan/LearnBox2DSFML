@@ -1,7 +1,7 @@
 #ifndef __GLOBAL_H
 #define __GLOBAL_H
 
-namespace My2DPhys
+namespace sfb2d
 {
 	typedef sf::Vector2f Point2f;
 	typedef b2Vec2 Vector2f;

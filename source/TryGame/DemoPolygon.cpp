@@ -39,7 +39,7 @@ namespace TryGame
 		return NULL;
 	}
 
-	void DemoPolygon::Init(b2World &refPhysWorld, My2DPhys::Actor **gameElements)
+	void DemoPolygon::Init(b2World &refPhysWorld, sfb2d::Actor **gameElements)
 	{
 		_ptrGround = new BasicShape *[GROUND_ELEMENT_COUNT];
 
@@ -68,7 +68,7 @@ namespace TryGame
 		return 1;//GROUND_ELEMENT_COUNT;
 	}
 	
-	My2DPhys::Actor *DemoPolygon::GetPlayable() const
+	sfb2d::Actor *DemoPolygon::GetPlayable() const
 	{
 		return NULL;
 	}

@@ -3,7 +3,7 @@
 #include "Sprite.h"
 
 
-namespace My2DPhys
+namespace sfb2d
 {
 	//sf::Image Sprite::_imageSrc;
 

@@ -1,7 +1,7 @@
 #ifndef __PRISMATIC_JOINT_H
 #define __PRISMATIC_JOINT_H
 
-namespace My2DPhys
+namespace sfb2d
 {
 	class PrismaticJoint : public JointBase
 	{

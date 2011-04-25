@@ -1,7 +1,7 @@
 #ifndef __QUERY_CALLBACK_H
 #define __QUERY_CALLBACK_H
 
-namespace My2DPhys
+namespace sfb2d
 {
 	class QueryCallback : public b2QueryCallback
 	{
